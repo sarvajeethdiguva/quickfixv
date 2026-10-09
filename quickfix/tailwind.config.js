@@ -1,0 +1,95 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: '#F8F6F1',
+        primary: {
+          DEFAULT: '#172B4D',
+          50: '#E8EDF4',
+          100: '#C5D1E3',
+          200: '#9EB5CF',
+          300: '#7799BB',
+          400: '#5A82AC',
+          500: '#3D6B9C',
+          600: '#2E5487',
+          700: '#213E6A',
+          800: '#172B4D',
+          900: '#0E1B30',
+        },
+        accent: {
+          DEFAULT: '#FF6B35',
+          50: '#FFF0EB',
+          100: '#FFD9C9',
+          200: '#FFB89E',
+          300: '#FF9773',
+          400: '#FF7D52',
+          500: '#FF6B35',
+          600: '#E5521C',
+          700: '#C43E10',
+          800: '#A32D0A',
+          900: '#7A2006',
+        },
+        secondary: {
+          DEFAULT: '#16856B',
+          50: '#E8F5F2',
+          100: '#C3E6DE',
+          200: '#96D4C8',
+          300: '#64C1B0',
+          400: '#3CAF9B',
+          500: '#1F9E87',
+          600: '#16856B',
+          700: '#0F6B55',
+          800: '#09513F',
+          900: '#04372A',
+        },
+        muted: '#667085',
+        border: '#E8E5DE',
+      },
+      fontFamily: {
+        heading: ['Manrope', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        card: '20px',
+        button: '12px',
+        badge: '8px',
+      },
+      boxShadow: {
+        card: '0 1px 3px rgba(23, 43, 77, 0.06), 0 4px 16px rgba(23, 43, 77, 0.08)',
+        'card-hover': '0 4px 12px rgba(23, 43, 77, 0.1), 0 16px 48px rgba(23, 43, 77, 0.12)',
+        modal: '0 20px 60px rgba(23, 43, 77, 0.18)',
+        dropdown: '0 8px 24px rgba(23, 43, 77, 0.12)',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '88': '22rem',
+        '100': '25rem',
+        '112': '28rem',
+        '128': '32rem',
+      },
+      animation: {
+        'skeleton-pulse': 'skeleton-pulse 1.8s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+      },
+      keyframes: {
+        'skeleton-pulse': {
+          '0%, 100%': { opacity: '0.6' },
+          '50%': { opacity: '1' },
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
